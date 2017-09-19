@@ -7,11 +7,11 @@
 [![Quality Gate](https://sonarcloud.io/api/badges/gate?key=es.upm.miw:IWVG.SwC.Joaquin)](https://sonarcloud.io/dashboard/index/es.upm.miw:IWVG.SwC.Joaquin)
 
 ### Arquitecto
-Joaquín Zamora
+Joaquín Zamora [joaquin-z](https://github.com/joaquin-z)
 
 ### Programadores
-* Ángel Sánchez @angelmart
-* Roberth Loaiza. @rploaiza
-* Rafael Falconí @rafaelfalconi
+* Ángel Sánchez [angelmart](https://github.com/angelmart)
+* Roberth Loaiza. [rploaiza](https://github.com/rploaiza)
+* Rafael Falconí [rafaelfalconi](https://github.com/rafaelfalconi)
 
 #### [Máster en Ingeniería Web por la U.P.M.](http://miw.etsisi.upm.es)
