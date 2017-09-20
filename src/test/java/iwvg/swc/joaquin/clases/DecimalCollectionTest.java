@@ -57,7 +57,13 @@ public class DecimalCollectionTest {
 
     @Test
     public void testMultiplicacion() {
-        assertEquals(-12, this.decimalCollection.multiplicacion(), 10e-5);
+        assertEquals(-12.0, this.decimalCollection.multiplicacion(), 10e-5);
+    }
+    
+    @Test
+    public void testMultiplicacionArithmeticExceptionIfEmpty() {
+        exception.expect(ArithmeticException.class);
+        new DecimalCollection().multiplicacion();
     }
 
 }
