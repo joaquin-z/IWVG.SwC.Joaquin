@@ -44,6 +44,9 @@ public class DecimalCollection {
     }
     
     public double multiplicacion(){
+        if (this.collection.isEmpty()) {
+            throw new ArithmeticException("Empty collection");
+        }
         double result = 1;
         for (double item : this.collection) {
                 result = result * item;
