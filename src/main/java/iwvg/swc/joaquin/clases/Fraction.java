@@ -68,5 +68,11 @@ public class Fraction {
         return this.isPropia() == false;
     }
     
-    
+    public boolean isDecimal() {
+        Integer x = 1;
+        while (x < Math.abs(this.denominator) && x <= Integer.MAX_VALUE / 10) {
+            x *= 10;
+        }
+        return x == Math.abs(this.denominator);
+    }
 }

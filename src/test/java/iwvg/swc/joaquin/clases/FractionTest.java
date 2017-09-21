@@ -62,4 +62,13 @@ private Fraction fraction;
         assertEquals(true, fraction.isImpropia());
     }
 
+    @Test
+    public void testIsDecimal() {
+        fraction = new Fraction(2,10);
+        assertEquals(true, fraction.isDecimal());
+        fraction = new Fraction(7,20);
+        assertEquals(false, fraction.isDecimal());
+        fraction = new Fraction(4,-100);
+        assertEquals(true, fraction.isDecimal());
+    }
 }
