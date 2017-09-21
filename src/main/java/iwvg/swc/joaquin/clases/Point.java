@@ -1,8 +1,9 @@
 package iwvg.swc.joaquin.clases;
 
 public class Point {
-    
+
     private int x;
+
     private int y;
 
     public Point(int x, int y) {
@@ -26,6 +27,19 @@ public class Point {
         return this.y;
     }
 
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public void setXY(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
     public double module() {
         return Math.sqrt((double) this.x * this.x + this.y * this.y);
     }
@@ -43,5 +57,5 @@ public class Point {
     public String toString() {
         return "Point[" + x + "," + y + "]";
     }
-    
+
 }
