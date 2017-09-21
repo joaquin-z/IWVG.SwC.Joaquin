@@ -60,4 +60,13 @@ public class Fraction {
         return (double) numerator / denominator;
     }
     
+    public boolean isPropia() {
+        return Math.abs(this.numerator) < Math.abs(this.denominator);
+    }
+    
+    public boolean isImpropia() {
+        return this.isPropia() == false;
+    }
+    
+    
 }

@@ -40,6 +40,26 @@ private Fraction fraction;
     @Test
     public void testGetDenominador() {
         assertEquals(3, fraction.getDenominator());
-}
+    }
+    
+    @Test
+    public void testIsPropia() {
+        fraction = new Fraction(3,7);
+        assertEquals(true, fraction.isPropia());
+        fraction = new Fraction(9,2);
+        assertEquals(false, fraction.isPropia());
+        fraction = new Fraction(3,-7);
+        assertEquals(true, fraction.isPropia());
+    }
+    
+    @Test
+    public void testIsImpropia() {
+        fraction = new Fraction(8,5);
+        assertEquals(true, fraction.isImpropia());
+        fraction = new Fraction(3,5);
+        assertEquals(false, fraction.isImpropia());
+        fraction = new Fraction(-7,4);
+        assertEquals(true, fraction.isImpropia());
+    }
 
 }
