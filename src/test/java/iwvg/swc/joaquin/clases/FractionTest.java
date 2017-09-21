@@ -75,5 +75,7 @@ public class FractionTest {
     @Test
     public void testIsIndefinite() {
         assertEquals(false, fraction.isIndefinite());
+        fraction = new Fraction(2, 0);
+        assertEquals(true, fraction.isIndefinite());
     }
 }
