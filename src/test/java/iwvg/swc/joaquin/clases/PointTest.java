@@ -62,5 +62,17 @@ public class PointTest {
         assertEquals(8,point.getY());
     }
     
+    @Test
+    public void testSetX() {
+        point.setX(6);
+        assertEquals(6,point.getX());
+    }
+    
+    @Test
+    public void testSetY() {
+        point.setY(8);
+        assertEquals(8,point.getY());
+    }
+    
 
 }
