@@ -58,7 +58,7 @@ public class Fraction {
     }
 
     public boolean isImpropia() {
-        return this.isPropia() == false;
+        return !this.isPropia();
     }
 
     public boolean isDecimal() {
@@ -70,10 +70,6 @@ public class Fraction {
     }
 
     public boolean isIndefinite() {
-        if (this.denominator == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return this.denominator == 0;
     }
 }
